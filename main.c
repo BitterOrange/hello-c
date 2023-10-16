@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "util/random.h"
 
 int main()
 {
-    srand(time(NULL));
-    printf("%ld\n", rand() % 100 + 1);
+    init_random();
+    long upper_limit;
+    scanf("%ld", &upper_limit);
+    printf("%ld\n", random(upper_limit));
     return 0;
 }
