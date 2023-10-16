@@ -3,6 +3,7 @@
 
 int main()
 {
+    puts("Let's randomize!");
     init_random();
     long upper_limit;
     scanf("%ld", &upper_limit);
